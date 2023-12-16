@@ -1,7 +1,7 @@
 // Api urls
 
-const animeapi = "https://api.anime-dex.workers.dev/anime/";
-const recommendationsapi = "https://api.anime-dex.workers.dev/recommendations/";
+const animeapi = "https://kitsune.com";
+const recommendationsapi = "https://kitsune.com";
 
 // Usefull functions
 
@@ -40,8 +40,8 @@ async function RefreshLazyLoader() {
 function getAnilistTitle(title) {
     if (title["userPreferred"] != null) {
         return title["userPreferred"];
-    } else if (title["english"] != null) {
-        return title["english"];
+    } else if (title["Indonesia"] != null) {
+        return title["Indonesia"];
     } else if (title["romaji"] != null) {
         return title["romaji"];
     } else if (title["native"] != null) {
@@ -54,8 +54,8 @@ function getAnilistTitle(title) {
 function getAnilistOtherTitle(title, current) {
     if (title["userPreferred"] != null && title["userPreferred"] != current) {
         return title["userPreferred"];
-    } else if (title["english"] != null && title["english"] != current) {
-        return title["english"];
+    } else if (title["indonesia"] != null && title["indonesia"] != current) {
+        return title["Indonesia"];
     } else if (title["romaji"] != null && title["romaji"] != current) {
         return title["romaji"];
     } else if (title["native"] != null && title["native"] != current) {
