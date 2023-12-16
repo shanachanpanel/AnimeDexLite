@@ -1,7 +1,7 @@
 // Api urls
 
-const animeapi = "https://kitsune.com";
-const recommendationsapi = "https://kitsune.com";
+const animeapi = "https://kitsune.me";
+const recommendationsapi = "https://kitsune.me";
 
 // Usefull functions
 
