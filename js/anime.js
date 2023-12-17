@@ -1,7 +1,7 @@
 // Api urls
 
-const animeapi = "https://api.anime-dex.workers.dev/anime/";
-const recommendationsapi = "https://api.anime-dex.workers.dev/recommendations/";
+const animeapi = "https://kitsunee.me";
+const recommendationsapi = "https://kitsunee.me";
 
 // Usefull functions
 
