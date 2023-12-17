@@ -1,6 +1,6 @@
-const animeapi = "https://kitsune.me.workers.dev/anime/";
-const episodeapi = "https://kitsune.me.workers.dev/episode/";
-const dlapi = "https://kitsune.me.workers.dev/download/";
+const animeapi = "https://kitsunee.me.workers.dev/anime/";
+const episodeapi = "https://kitsunee.me.workers.dev/episode/";
+const dlapi = "https://kitsunee.me.workers.dev/download/";
 
 // Usefull functions
 
