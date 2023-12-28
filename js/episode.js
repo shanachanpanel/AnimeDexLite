@@ -1,6 +1,6 @@
-const animeapi = "https://kitsunee.me.workers.dev/anime/";
-const episodeapi = "https://kitsunee.me.workers.dev/episode/";
-const dlapi = "https://kitsunee.me.workers.dev/download/";
+const animeapi = "https://rizaapi.vercel.app/anime/";
+const episodeapi = "https://rizaapi.vercel.app/episode/";
+const dlapi = "https://rizaapi.vercel.app/download/";
 
 // Usefull functions
 
