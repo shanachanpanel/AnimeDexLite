@@ -1,7 +1,7 @@
 // Api urls
 
-const IndexApi = "https://kitsunee.me/home";
-const recentapi = "https://kitsunee.me/recent/";
+const IndexApi = "https://rizaapi.vercel.app/home";
+const recentapi = "https://rizaapi.vercel.app/recent/";
 
 // Usefull functions
 
