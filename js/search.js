@@ -1,4 +1,4 @@
-const searchapi = "https://kitsunee.me/search/";
+const searchapi = "https://rizaapi.vercel.app/search/";
 
 // Usefull functions
 
