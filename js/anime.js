@@ -1,7 +1,7 @@
 // Api urls
 
-const animeapi = "https://kitsunee.me";
-const recommendationsapi = "https://kitsunee.me";
+const animeapi = "https://rizaapi.vercel.app/anime";
+const recommendationsapi = "https://rizaapi.vercel.app/genres";
 
 // Usefull functions
 
