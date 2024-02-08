@@ -1,4 +1,4 @@
-const animeapi = "https://rizaapi.vercel.app/anime/";
+const animeapi = "https://otakudesu-zeta.vercel.app/api/otakudesu/";
 const episodeapi = "https://rizaapi.vercel.app/episode/";
 const dlapi = "https://rizaapi.vercel.app/download/";
 
