@@ -1,6 +1,6 @@
 // Api urls
 
-const IndexApi = "https://rizaapi.vercel.app/home";
+const IndexApi = "https://latipharkat-api.my.id/api/otakudesu/home";
 const recentapi = "https://rizaapi.vercel.app/recent/";
 
 // Usefull functions
