@@ -1,4 +1,4 @@
-const searchapi = "https://rizaapi.vercel.app/search/";
+const searchapi = "https://otakudesu-zeta.vercel.app/api/otakudesu/search/";
 
 // Usefull functions
 
@@ -37,9 +37,9 @@ function sentenceCase(str) {
 
 let hasNextPage = true;
 
-// Search function to get anime from gogo
-async function SearchAnime(query, page = 1) {
-    const data = await getJson(searchapi + query + "?page=" + page);
+// Search function to get anime from otakudesu
+async function SearchAnime(keyword) {
+    const data = await getJson(searchapi + keyword);
 
     const animes = data["results"];
     const contentdiv = document.getElementById("latest2");
@@ -49,7 +49,7 @@ async function SearchAnime(query, page = 1) {
     for (let i = 0; i < animes.length; i++) {
         const anime = animes[i];
         if (anime["title"].toLowerCase().includes("dub")) {
-            anime["subOrDub"] = "DUB";
+            anime["subOrDub"] = "DUB/eror";
         } else {
             anime["subOrDub"] = "SUB";
         }
@@ -75,16 +75,16 @@ async function SearchAnime(query, page = 1) {
 }
 
 const params = new URLSearchParams(window.location.search);
-const query = params.get("query");
+const query = params.get("keyword");
 let page = 1;
 
 if (query == null) {
     window.location.replace("./index.html");
 }
 
-document.getElementById("latest").innerHTML = `Search Results: ${query}`;
+document.getElementById("latest").innerHTML = `Search Results: ${keyword}`;
 
-SearchAnime(query, page).then((data) => {
+SearchAnime(keyword).then((data) => {
     hasNextPage = data;
     page += 1;
     RefreshLazyLoader();
@@ -98,7 +98,7 @@ window.addEventListener("scroll", () => {
         document.documentElement.scrollHeight
     ) {
         if (hasNextPage == true) {
-            SearchAnime(query, page).then((data) => {
+            SearchAnime(keyword).then((data) => {
                 hasNextPage = data;
                 page += 1;
                 RefreshLazyLoader();
