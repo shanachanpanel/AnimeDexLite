@@ -1,7 +1,7 @@
 // Api urls
 
 const IndexApi = "https://latipharkat-api.my.id/api/otakudesu/home";
-const recentapi = "https://rizaapi.vercel.app/recent/";
+const recentapi = "https://aniyoi-api.vercel.app/recent/";
 
 // Usefull functions
 
@@ -219,7 +219,7 @@ window.addEventListener("scroll", () => {
 getJson(IndexApi).then((data) => {
     data = data["results"];
     const anilistTrending = data["anilistTrending"];
-    const gogoanimePopular = data["gogoPopular"];
+    const gogoanimePopular = data["kuramanimePopular"];
 
     getTrendingAnimes(anilistTrending).then((data) => {
         RefreshLazyLoader();
