@@ -1,7 +1,7 @@
 // Api urls
 
 const animeapi = "https://otakudesu-zeta.vercel.app/api/otakudesu";
-const recommendationsapi = "https://otakudesu-zeta.vercel.app/api/otakudesu/genre";
+const recommendationsapi = "https://otakudesu-zeta.vercel.app/api/otakudesu/genres";
 
 // Usefull functions
 
